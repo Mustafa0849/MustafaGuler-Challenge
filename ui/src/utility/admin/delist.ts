@@ -8,7 +8,7 @@ export const delist = (
   const tx = new Transaction();
 
   tx.moveCall({
-    target: '${packageId}::marketplace::delist',
+    target: `${packageId}::marketplace::delist`,
     arguments: [tx.object(adminCapId), tx.object(listHeroId)],
   });
   return tx;

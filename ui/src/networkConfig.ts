@@ -20,15 +20,15 @@ const { networkConfig, useNetworkVariable, useNetworkVariables } =
   createNetworkConfig({
     devnet: {
       url: getFullnodeUrl("devnet"),
-      variables: { packageId: PACKAGE_ID },
+      variables: { packageId: 0x709fc78012ceb653fee978425c41a7fcafb01d27bf9371b361de7f4a3adda1e8 },
     },
     testnet: {
       url: getFullnodeUrl("testnet"),
-      variables: { packageId: PACKAGE_ID },
+      variables: { packageId: 0x709fc78012ceb653fee978425c41a7fcafb01d27bf9371b361de7f4a3adda1e8 },
     },
     mainnet: {
       url: getFullnodeUrl("mainnet"),
-      variables: { packageId: PACKAGE_ID },
+      variables: { packageId: 0x709fc78012ceb653fee978425c41a7fcafb01d27bf9371b361de7f4a3adda1e8 },
     },
   });
 

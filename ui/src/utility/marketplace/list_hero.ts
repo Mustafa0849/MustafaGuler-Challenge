@@ -10,7 +10,7 @@ export const listHero = (
   const priceInMist = BigInt(priceInSui) * BigInt(1_000_000_000);
   
   tx.moveCall({
-    target: '${packageId}::marketplace::list_hero',
+    target: `${packageId}::marketplace::list_hero`,
     arguments: [
       tx.object(heroId),
       tx.pure.u64(priceInMist),
