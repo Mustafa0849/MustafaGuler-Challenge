@@ -14,20 +14,21 @@ import { createNetworkConfig } from "@mysten/dapp-kit";
  * │ Modules: arena, hero, marketplace
  * └──
  */
+const PACKAGE_ID = "0x709fc78012ceb653fee978425c41a7fcafb01d27bf9371b361de7f4a3adda1e8";
 
 const { networkConfig, useNetworkVariable, useNetworkVariables } =
   createNetworkConfig({
     devnet: {
       url: getFullnodeUrl("devnet"),
-      variables: { packageId: 0x709fc78012ceb653fee978425c41a7fcafb01d27bf9371b361de7f4a3adda1e8 },
+      variables: { packageId: PACKAGE_ID },
     },
     testnet: {
       url: getFullnodeUrl("testnet"),
-      variables: { packageId: 0x709fc78012ceb653fee978425c41a7fcafb01d27bf9371b361de7f4a3adda1e8 },
+      variables: { packageId: PACKAGE_ID },
     },
     mainnet: {
       url: getFullnodeUrl("mainnet"),
-      variables: { packageId: 0x709fc78012ceb653fee978425c41a7fcafb01d27bf9371b361de7f4a3adda1e8 },
+      variables: { packageId: PACKAGE_ID },
     },
   });
 
