@@ -8,11 +8,11 @@ export const createHero = (
 ) => {
   const tx = new Transaction();
   tx.moveCall({
-    target: `${packageId}::heroes::create_hero`,
+    target: `${packageId}::hero::create_hero`,
     arguments: [
       tx.pure.string(name),
       tx.pure.string(imageUrl),
-      tx.pure.u64(BigInt(power))
+      tx.pure.u64(Number(power))
     ],
   });
 
