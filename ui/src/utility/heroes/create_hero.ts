@@ -8,7 +8,7 @@ export const createHero = (
 ) => {
   const tx = new Transaction();
   tx.moveCall({
-    target: `${packageId}::arena::create_hero`,
+    target: `${packageId}::heroes::create_hero`,
     arguments: [
       tx.pure.string(name),
       tx.pure.string(imageUrl),
